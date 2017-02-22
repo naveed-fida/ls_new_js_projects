@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <style>
+    body {
+      background: #22596e;
+    }
+    #calculator {
+      width: 350px;
+      height: 450px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 4px;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    #screen {
+      height: 140px;
+      border-bottom: 1px solid #ccc;
+      box-sizing: border-box;
+      padding: 10px;
+      margin: 0 0 10px 0;
+      text-align: right;
+      position: relative;
+    }
+
+    #screen .current_num {
+      font-size: 24px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      margin: 0px;
+    }
+
+    #buttons a {
+      width: 82px;
+      height: 53px;
+      background: #ccc;
+      box-sizing: border-box;
+      padding: 15px 0 0 0;
+      text-align: center;
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+      margin-top: 5px;
+      font-size: 18px;
+      border-radius: 4px;
+    }
+
+    #bottons a:hover {
+      background: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div id="calculator">
+    <div id="screen">
+      <p class="calculation"></p>
+      <p class="current_num"></p>
+    </div>
+
+    <div id="buttons">
+
+      <a href="#" id="ce" class="control">CE</a>  
+      <a href="#" id="c" class="control">C</a>
+      <a href="#" id="clear" class="control">NEG</a>
+      <a href="#" class="op">/</a>  <!-- other divide sign as further exp -->
+      <a href="#" class="digit">7</a>
+      <a href="#" class="digit">8</a>
+      <a href="#" class="digit">9</a>
+      <a href="#" class="op">x</a>
+      <a href="#" class="digit">4</a>
+      <a href="#" class="digit">5</a>
+      <a href="#" class="digit">6</a>
+      <a href="#" class="op">-</a>
+      <a href="#" class="digit">1</a>
+      <a href="#" class="digit">2</a>
+      <a href="#" class="digit">3</a>
+      <a href="#" class="op">+</a>
+      <a href="#" class="digit">0</a>
+      <a href="#" class="digit">.</a>
+      <a href="#" class="op">%</a>
+      <a href="#" class="result_button">=</a>  
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+  body {
+    background: #226543;
+    padding: 20px;
+    color: #000;
+    font-size: 18px;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  #todos {
+    list-style: none;
+    width: 600px;
+  }
+
+  #todos li {
+    padding: 16px 20px 0 20px;
+    box-sizing: border-box;
+    background: #fff;
+    color: #222;
+    height: 50px;
+    margin-bottom: 20px;
+    text-indent: 0;
+    border-radius: 5px;
+    position: relative;
+  }
+  .confirm_prompt {
+    display: none;
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    z-index: 10;
+    top: 150px;
+    left: 50%;
+    margin-left: -200px;
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .confirm_prompt .actions {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+  }
+
+  .confirm_prompt .actions a {
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a.confirm_yes {
+    background: #9f1331;
+  }
+
+  a.confirm_no {
+    background: #289f37;
+  }
+
+  .overlay {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+    /*delete button styles*/
+  span.remove {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    transform: rotate(45deg);
+    right: 20px;
+    cursor: pointer;
+  }
+
+  span.remove:hover {
+    width: 24px;
+    height: 24px;
+  }
+
+  span.remove:before, span.remove:after {
+    background: #ec5555;
+    content: "";
+    position: absolute;
+  }
+  span.remove:before {
+    height: 3px;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -1px;
+  }
+  span.remove:after {
+    width: 3px;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+  }

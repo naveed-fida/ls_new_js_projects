@@ -16,12 +16,37 @@ var App = {
     this.printOperator(e.target.textContent.trim());
   },
 
+  clearAll(e) {
+    this.clear(e);
+    this.clearOpScreen();
+    this.reset();
+  },
+
+  clear(e) {
+    e.preventDefault();
+    this.clearCurrNumScreen();
+    this.current_num_screen.textContent = '0';
+  },
+
   handleResClick(e) {
     e.preventDefault();
 
     this.calculateResult();
     this.clearOpScreen();
+    this.reset();
+  },
+
+  handleDotClick(e) {
+    e.preventDefault();
+
+    if (this.current_num_screen.textContent.indexOf('.') === -1) {
+      this.printToNumScreen('.');
+    }
+  },
+
+  reset() {
     this.result = 0;
+    this.current_op = '+';
   },
 
   printOperator(op) {
@@ -41,8 +66,10 @@ var App = {
   },
 
   calculateResult() {
-    current_num_screen = this.current_num_screen.textContent;
-    number = current_num_screen.includes('.') ? parseFloat(current_num_screen) : parseInt(current_num_screen);
+    var current_num_screen = this.current_num_screen.textContent,
+        number = current_num_screen.includes('.') ? parseFloat(current_num_screen) : parseInt(current_num_screen);
+
+
     switch (this.current_op) {
       case "+":
         this.result += number;
@@ -64,18 +91,29 @@ var App = {
     this.displayResult();
   },
 
+  negateNum(e) {
+    if (this.current_num_screen.textContent !== '0')
+      this.current_num_screen.textContent = "-" + this.current_num_screen.textContent;
+  },
+
   displayResult() {
     this.current_num_screen.textContent = this.result;
     this.result_status = true;
   },
 
   printDigit(digit) {
+    if (this.current_num_screen.textContent === '0') this.clearCurrNumScreen();
     if (this.result_status) {
       this.clearCurrNumScreen();
       this.result_status = false;
     }
-    current_num = this.current_num_screen.textContent.trim();
-    this.current_num_screen.textContent = current_num + digit;
+
+    this.printToNumScreen(digit);
+  },
+
+  printToNumScreen(item) {
+    var current_text = this.current_num_screen.textContent.trim();
+    this.current_num_screen.textContent = current_text + item;
   },
 
   bind() {
@@ -88,6 +126,10 @@ var App = {
     }.bind(this));
 
     document.querySelector('.result_button').addEventListener('click', this.handleResClick.bind(this));
+    document.querySelector('#neg').addEventListener('click', this.negateNum.bind(this));
+    document.querySelector('#c').addEventListener('click', this.clear.bind(this));
+    document.querySelector('#ce').addEventListener('click', this.clearAll.bind(this));
+    document.querySelector('.dot').addEventListener('click', this.handleDotClick.bind(this));
   },
 
   init() {

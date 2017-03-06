@@ -1,0 +1,11 @@
+A standard calculator application in JS
+
+- The calculator should have functioning buttons for the following:
+  - All digits
+  - +, -, /, *, %, =, NEG, C, CE
+
+- The calculator screen should have two parts:
+  - A part where the current entered number is shown
+  - A part where all the operations taking place are added
+
+See the demo app for an example 

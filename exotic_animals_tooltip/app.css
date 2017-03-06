@@ -1,0 +1,41 @@
+@import 'whitespace-reset.css';
+
+body {
+  background: #335;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+}
+
+figure {
+  width: 22%;
+  margin-left: 2%;
+  display: inline-block;
+  margin-bottom: 20px;
+  vertical-align: top;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 3px;
+  position: relative;
+}
+
+figcaption {
+  display: none;
+  width: 300px;
+  padding: 10px;
+  height: 150px;
+  border-radius: 4px;
+  background: rgba(0, 0, 20, 0.7);
+  color: #fff;
+  z-index: 5;
+}
+
+img {
+  width: 100%;
+}

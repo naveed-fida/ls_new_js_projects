@@ -1,0 +1,9 @@
+Make the following changes to the Todo Delete exercise:
+
+- When the user clicks on a todo item, a context menu appears
+- context menu has three items
+  - show details
+  - edit todo
+  - delete todo
+
+- When the user clicks delete todo option, the confirm prompt appears

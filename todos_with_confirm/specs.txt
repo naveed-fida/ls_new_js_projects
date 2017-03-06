@@ -1,0 +1,10 @@
+A list of todos each with a delete button
+
+The delete button when, clicked displays a prompt to confirm deletion
+
+The prompt:
+  - is a custom, css based prompt
+  - asks the user to confirm the deletion
+  - has a yes and a no button
+  - when the user clicks yes, the prompt disappears and todo deleted
+  - if the user clicks no, the promp disappears and the todos not deleted

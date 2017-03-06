@@ -1,0 +1,5 @@
+An application that lists used cars and their prices
+
+Implement a simple filtering mechanism to display cars
+  - You should be able to filter by price, make, model and year of the car
+  

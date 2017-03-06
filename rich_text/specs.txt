@@ -1,0 +1,13 @@
+A rich-tex editor
+  - make text bold
+  - italicize text
+  - underline text
+  - strikethrough
+  - create a link from text
+  - create an ordered list
+  - create an unordered list
+  - align text to right, left, center and justify
+
+  Useful links:
+  1. https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable
+  2. https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand

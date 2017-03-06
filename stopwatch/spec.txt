@@ -1,0 +1,15 @@
+An stopwatch application
+
+It should have:
+  - hours
+  - minutes
+  - seconds
+  - centiseconds
+  - start/stop button
+  - reset button
+
+The start/stop button should:
+  - read 'Start', when the stopwatch is stopped
+  - read 'Stop', when the stopwatch is started
+
+1 centi second is equal to 1/100th of a second or 10ms

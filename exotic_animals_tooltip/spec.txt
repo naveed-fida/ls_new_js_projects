@@ -1,0 +1,5 @@
+A page that diplays images of animals of your choice
+
+- When you hover over an image for two seconds, a tooltip appears that
+  describes the animal in question.
+- When you hover for less than two seconds the tooltip doesn't appear

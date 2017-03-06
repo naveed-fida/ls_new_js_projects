@@ -1,0 +1,11 @@
+- A page that gives a desctiption of 1 paragraph of a few programming languages of your choice
+
+- The's a heading and a pragraph for each programming language
+- Initally, only around 100 characters are shown for each paragraph.
+- There is a 'Show More' button for each programming language
+- When user clicks 'Show More' button:
+  - The whole paragraph is shown
+  - The button text changes to 'Show Less'
+- When the 'Show Less' button is clicked:
+  - The button text changes to 'Show More'
+  - The paragraph again hides most of its text

@@ -1,5 +1,26 @@
-An application that lists used cars and their prices
+An application that lists a grid of cars from the given collection and has the capability to filter them
 
-Implement a simple filtering mechanism to display cars
-  - You should be able to filter by price, make, model and year of the car
-  
+- Display the following for each car
+  - an image
+  - make and model
+  - price
+  - year manufactured
+
+- The page should have a filtering area that contains the following:
+  - A select box for car makers
+    - options are populated by selecting all the unique makers from our
+      car collection
+  - A select box for car models
+    - options are populated by selecting all the unique models from our
+      car collection
+  - A select box for years
+    - options are populated by selecting all the unique years from our car
+      collection
+  - A select box for price
+    - options are populated by selecting all the unique years from our car
+      collection
+  - A filter button
+
+- When the filter button is clicked, the cars are filtered and only those cars
+  are displayed that have the same price, mode, make and manufacture year as
+  selected in the select boxes for the corresponding attributes.

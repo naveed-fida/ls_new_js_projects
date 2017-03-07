@@ -1,10 +1,15 @@
-A list of todos each with a delete button
+A list of todos each with custom prompt for deletion
 
-The delete button when, clicked displays a prompt to confirm deletion
+- Create a Dom list from the given collection of todos
+- Add a delete button for each todo
 
-The prompt:
+
+- When the delete button is clicked a prompt appears asking the user to confirm.
+
+- The prompt:
   - is a custom, css based prompt
-  - asks the user to confirm the deletion
   - has a yes and a no button
-  - when the user clicks yes, the prompt disappears and todo deleted
-  - if the user clicks no, the promp disappears and the todos not deleted
+  - when the user clicks yes, the prompt disappears and corresponding todo is
+    deleted
+
+  - if the user clicks no, the promp disappears and the todo is not deleted

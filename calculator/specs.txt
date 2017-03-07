@@ -1,11 +1,23 @@
-A standard calculator application in JS
+A standard calculator GUI application in JS
+
+- The calculator should have a screen
+
+- The calculator screen should have two parts:
+  - A part where the current entered number is shown
+  - A part where all current operations are shown
 
 - The calculator should have functioning buttons for the following:
   - All digits
   - +, -, /, *, %, =, NEG, C, CE
+  - The button NEG negates the current entered number or result on the screen
+  - The button CE resets the whole calculator screen
+  - The button C clear the current entered number and displays 0 in its place
 
-- The calculator screen should have two parts:
-  - A part where the current entered number is shown
-  - A part where all the operations taking place are added
+- When a digit button is clicked, it's added to the current number screen
+- When an operation button is clicked, the current number along with the operation
+  is added to the operations part of the screen and the result screen shows the result of previous operations
+
+- When the = button is clicked, the operations part of the screen is cleared and
+  the result/current number part of the screen displays the result
 
 See the demo app for an example 

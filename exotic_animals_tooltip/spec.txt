@@ -1,5 +1,10 @@
-A page that diplays images of animals of your choice
+A page that displays a grid of images of animals and shows a tooltip
 
-- When you hover over an image for two seconds, a tooltip appears that
-  describes the animal in question.
-- When you hover for less than two seconds the tooltip doesn't appear
+- Choose any pets/animals of your choice
+- Create markup so that for each animal there's an image and a caption that 
+  describes the animal in the image.
+- The caption should be hidden initially
+- When the image is hovered over for more than two seconds, a tooltip appears that
+  shows the caption.
+- The caption should not appear if the cursor is removed from the image before
+  the two seconds time delay.

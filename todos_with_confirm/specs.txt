@@ -1,15 +1,19 @@
-A list of todos each with custom prompt for deletion
+A list of todos with a custom confirm prompt for deleting todos.
 
-- Create a Dom list from the given collection of todos
+## Requirements
+- Create a list of todos in the DOM from a javscript collection(array) of todos 
 - Add a delete button for each todo
-
-
 - When the delete button is clicked a prompt appears asking the user to confirm.
 
 - The prompt:
   - is a custom, css based prompt
   - has a yes and a no button
-  - when the user clicks yes, the prompt disappears and corresponding todo is
+  - if the user clicks the yes button, the prompt disappears and corresponding todo is
     deleted
+  - if the user clicks the no button, the promp disappears and the todo is not deleted
 
-  - if the user clicks no, the promp disappears and the todo is not deleted
+You can start with a collection of your choice. Here's the collection used in our demo app:
+
+```javscript
+
+```
